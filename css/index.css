@@ -1,0 +1,34 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+#main-container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.postButtons {
+    height: 60vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.postButtons button {
+    background-color: #cfb53b;
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+} 
