@@ -4,29 +4,28 @@
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 10px;
+    margin: 10px 7%;
     float:left;
     border-radius: 15px;
-    overflow: hidden;
 }
     
 .post-left {
-        width: 15%;            
-        max-width: 15%;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        font-weight: bold;
-        color: #000;
+    width: 15%;            
+    max-width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
 }
 .post-content {
-        width: 75%;           
-        display: table-cell;
-        text-align: left;
-        background-color: #E8E8E8;
-        color: #000000;
-        border-radius: 0 15px 15px 0;
-        padding: 0 20px;  
+    width: 75%;           
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;  
 }
 .post-title{
     font-family: 'Itim', cursive;
@@ -45,8 +44,9 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
+    height: 7.5vh;
     margin-bottom: 0 !important;
+    overflow: hidden;
 }
 
 body {
@@ -64,7 +64,51 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //align-content: space-between;
     justify-content: center;
-    margin: 0px 0px 0px 0px;
+}
+
+.trash {
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.deleteModal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.delete-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  width: 25%;
+  font-family: 'Abel';
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btnyes {
+    border: 0;
+    background-color: #f5564a;
+    color: white;
+    padding: 10px 50px;
+    margin: 0px 20px 10px 20px;
+}
+
+.btnno {
+    border: 0;
+    background-color: #5eb762;
+    color: white;
+    padding: 10px 53px;
+    margin: 0px 20px 10px 20px;
 }

@@ -2,18 +2,62 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
+
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
+
 .blogAuthor {
-    padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
 }
-.blogContent{
 
+.blogAuthor button {
+    position: absolute;
+    top: 180px;
+    right: 110px    
 }
 
-/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.blogContent{
+    margin: 0px 100px 0px 100px;
+}
+
+.editbutton {
+    background-color: #ef416a;
+    border: 0;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+#commentarea {
+    margin: 10px 0px;
+}
+
+#likebtn {
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+}
+
+.com {
+    font-weight: 600;
+}
+
+.commentsection {
+    padding: 20px;
+    width: 60%;
+    background-color: lightgray;
+}
+
+.comments {
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.commentspara {
+    margin: 20px 10px;
+}
