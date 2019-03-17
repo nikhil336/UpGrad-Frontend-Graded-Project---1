@@ -2,6 +2,8 @@ var signinmodal = document.getElementById('signin-modal');
 
 var signupmodal = document.getElementById('signup-modal');
 
+var postmodal = document.getElementById('create-post-modal');
+
 var span0 = document.getElementsByClassName("close")[0];
 
 var span1 = document.getElementsByClassName("close")[1];
@@ -20,7 +22,10 @@ window.onclick = function(event) {
   }
   if (event.target == signupmodal) {
     signupmodal.style.display = "none";  
-  }    
+  }
+  if (event.target == postmodal) {
+    postmodal.style.display = "none";  
+  }      
 }
 
 function SigninModal() {
